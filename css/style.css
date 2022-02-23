@@ -1,0 +1,5 @@
+/* façon de link different stylesheet dans le header*/
+@import url("normalize.css"); 
+@import url("variable.css");
+@import url("main.css");
+

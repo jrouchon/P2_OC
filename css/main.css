@@ -1,0 +1,68 @@
+* {
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    color: black;
+    box-sizing: border-box;
+}
+.bleu {
+    color: var(--blue);
+}
+
+.titre {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sous_titre {
+    font-size: 16px; /* à vue de nez à verif*/
+    font-weight: bold;
+}
+
+.recherche_filtre {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.texte {
+    /*normal donc 16px */
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--grey);
+    height: 120px;
+}
+
+.logo {
+    width: 100px;
+}
+
+header div a {
+    display: flex;
+    padding: 45px;
+}
+
+header div ul {
+    display: inline-block;
+}
+
+header div ul li {
+    display: flex;
+    justify-content: flex-end;
+
+    border : solid; /* ! pour visualisation ! */
+}
+
+header div ul li a {
+    text-decoration:none;
+    padding : 60px; /* ? à verifier pas satisfaite ? */
+}
+
+    header div ul li a:hover {
+    color: var(--blue);
+    border-top: 3px solid var(--blue);
+
+}
