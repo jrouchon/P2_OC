@@ -12,6 +12,9 @@
 .titre {
     font-size: 20px;
     font-weight: bold;
+    padding: 5px;
+    margin: 0px 0px 0px 40px; /* haut droite bas gauche*/
+    
 }
 
 .sous_titre {
@@ -22,17 +25,22 @@
 .recherche_filtre {
     font-size: 18px;
     font-weight: bold;
+    padding: 5px;
+    margin: 0px 0px 0px 40px;
 }
 
 .texte {
+    padding: 5px;
+    margin: 0px 0px 0px 40px; 
     /*normal donc 16px */
 }
 
+/* header */
 
 header {
     display: flex;
     justify-content: space-between;
-    background-color: var(--grey);
+    /* background-color: var(--grey); */
     height: 120px;
 }
 
@@ -45,24 +53,39 @@ header div a {
     padding: 45px;
 }
 
-header div ul {
+header nav ul {
     display: inline-block;
+    /*margin: 0px;*/
+    padding: 0px; /* pour rapprocher les 2 ancres*/
 }
 
-header div ul li {
+header nav ul li {
     display: flex;
     justify-content: flex-end;
 
-    border : solid; /* ! pour visualisation ! */
+    /*border : solid;  ! pour visualisation ! */
 }
 
-header div ul li a {
+header nav ul li a {
     text-decoration:none;
     padding : 60px; /* ? à verifier pas satisfaite ? */
 }
 
-    header div ul li a:hover {
+header nav ul li a:hover {
     color: var(--blue);
     border-top: 3px solid var(--blue);
 
+}
+
+/* main */
+
+.search_bar {
+    padding: 5px;
+    margin: 0px 0px 0px 40px;
+}
+
+.fa-location-dot {
+    background-color: var(--grey);
+    padding: 18px 20px 18px 18px;
+    border-radius: 15px 0px 0px 15px;
 }
