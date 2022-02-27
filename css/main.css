@@ -132,22 +132,34 @@ header nav ul li a:hover {
 .filtres {
     margin: 20px 0px 0px 40px;
     display: flex;
+    flex-wrap: wrap;
+    padding-right: 15px;
 }
 
 .filtre {
     padding: 15px;
     font-size: 18px;
     font-weight: bold;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
 }
 
-/* toggle switch test */
+.marg_filtre {
+    margin: 0px 10px 0px 5px;
+}
 
+
+/* toggle switch test */
+/*<div >*/
+/*  <input type="checkbox" name="switch" id="switch" >*/
+/*  <label for="switch" id="label_switch" > <span class="bla" > bla-bla</span > </label >*/
+/*</div >*/
+
+/*debut bouton test*/
 #label_switch { /* bouton total */
     display: inline-block;
     border: 2px solid var(--grey);
     border-radius: 50px;
-    width: 140px;
+    width: 140px; /* à adapter selon la taille totale */
     height: 50px;
     position: relative;
     cursor: pointer;
@@ -155,13 +167,14 @@ header nav ul li a:hover {
 }
 
 #label_switch:after { /* petit bouton */
+    /* icone */
     font: var(--fa-font-solid);
     color: var(--fa-primary-color, #0065FC);
     content: "\f005";
     display: flex;
     justify-content: center;
     align-items: center;
-    /**/
+    /* général */
     width: 47px;
     height: 47px;
     background-color: var(--light-blue);
@@ -174,24 +187,27 @@ input:checked + #label_switch:after { /* faire bouger le bouton*/
     transform: translateX(-100%);
 }
 
-.bla {
+.bla { /* avant check*/
+    font-size: 18px;
+    font-weight: bold;
     color: black;
     display: flex;
     position: absolute;
-    padding: 15px 0px 15px 50px;
+    padding: 15px 0px 15px 50px; /* à adapter selon la taille du texte */
 }
+/* fin bouton test */
 
 
 input:checked + label { /* changer la couleur du fond quand checked*/
     background-color: var(--blue);
 } 
 
-input:checked + label > span {
+input:checked + label > span { /* après checked */
     color: white;
     font-weight: bold;
     display: flex;
     position: absolute;
-    padding: 15px 10px;
+    padding: 15px 15px;
 }
 
 input[type="checkbox"] { /*cacher l'elem checkbox non utilisé*/
@@ -202,11 +218,175 @@ input[type="checkbox"] { /*cacher l'elem checkbox non utilisé*/
 
 /* filtre économique */
 
+#label_money { /* bouton total */
+    display: inline-block;
+    border: 2px solid var(--strong-grey);
+    border-radius: 50px;
+    width: 180px; /* à adapter selon la taille totale */
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
 
+#label_money:after { /* petit bouton */
+    /* icone */
+    font: var(--fa-font-solid);
+    color: var(--fa-primary-color, #0065FC);
+    content: "\f53a";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* général */
+    width: 47px;
+    height: 47px;
+    background-color: var(--light-blue);
+    position: absolute;
+    border-radius: 50px;
+}
 
+input:checked + #label_money:after { /* faire bouger le bouton*/
+    left: calc(100%);
+    transform: translateX(-100%);
+}
 
+.economique { /* avant check*/
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    position: absolute;
+    padding: 15px 0px 15px 50px; /* à adapter selon la taille du texte */
+}
 
+/* filtre Familial */
 
+#label_child { /* bouton total */
+    display: inline-block;
+    border: 2px solid var(--strong-grey);
+    border-radius: 50px;
+    width: 140px; /* à adapter selon la taille totale */
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#label_child:after { /* petit bouton */
+    /* icone */
+    font: var(--fa-font-solid);
+    color: var(--fa-primary-color, #0065FC);
+    content: "\f1ae";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* général */
+    width: 47px;
+    height: 47px;
+    background-color: var(--light-blue);
+    position: absolute;
+    border-radius: 50px;
+}
+
+input:checked + #label_child:after { /* faire bouger le bouton*/
+    left: calc(100%);
+    transform: translateX(-100%);
+}
+
+.familial { /* avant check*/
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    position: absolute;
+    padding: 15px 0px 15px 50px; /* à adapter selon la taille du texte */
+}
+
+/* filtre romantique */
+
+#label_heart { /* bouton total */
+    display: inline-block;
+    border: 2px solid var(--strong-grey);
+    border-radius: 50px;
+    width: 180px; /* à adapter selon la taille totale */
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#label_heart:after { /* petit bouton */
+    /* icone */
+    font: var(--fa-font-solid);
+    color: var(--fa-primary-color, #0065FC);
+    content: "\f004";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* général */
+    width: 47px;
+    height: 47px;
+    background-color: var(--light-blue);
+    position: absolute;
+    border-radius: 50px;
+}
+
+input:checked + #label_heart:after { /* faire bouger le bouton*/
+    left: calc(100%);
+    transform: translateX(-100%);
+}
+
+.romantique { /* avant check*/
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    position: absolute;
+    padding: 15px 0px 15px 50px; /* à adapter selon la taille du texte */
+}
+
+/* filtre Animaux autorisés */
+
+#label_dog { /* bouton total */
+    display: inline-block;
+    border: 2px solid var(--strong-grey);
+    border-radius: 50px;
+    width: 230px; /* à adapter selon la taille totale */
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#label_dog:after { /* petit bouton */
+    /* icone */
+    font: var(--fa-font-solid);
+    color: var(--fa-primary-color, #0065FC);
+    content: "\f6d3";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* général */
+    width: 47px;
+    height: 47px;
+    background-color: var(--light-blue);
+    position: absolute;
+    border-radius: 50px;
+}
+
+input:checked + #label_dog:after { /* faire bouger le bouton*/
+    left: calc(100%);
+    transform: translateX(-100%);
+}
+
+.animaux { /* avant check*/
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    position: absolute;
+    padding: 15px 0px 15px 50px; /* à adapter selon la taille du texte */
+}
 
 
 
