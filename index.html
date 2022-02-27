@@ -42,20 +42,41 @@
             <div>
                 <p class="titre">Trouvez votre hébergement pour des vacances de rêve</p>
                 <p class="texte">En plein centre ville ou en pleine nature</p>
-                
+
                 <div class="search_bar">
                     <i class="fa-solid fa-location-dot"></i>
-                    <input class="bla" type="search" onfocus="this.value=''" value="Marseille, France">
-                    <button class="search_button" type="submit">Rechercher</button>
+                    <input class="search_input recherche" type="search" onfocus="this.value=''" value="Marseille, France"> <!-- onfocus="this.value=''" pour clear le champ de recherche au clic -->
+                    <button class="search_button recherche" type="submit">
+                        <span class="search_button_span">Rechercher</span>
+                        <i class="search_button_i fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div><br>
+                <div class="filtres">
+                    <div><p class="filtre">Filtres</p></div>
+                    <div>
+                        <i class="fa-solid fa-money-bill-wave toggle_money"></i> <!-- f53a -->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-child toggle_child"></i> <!-- f1ae -->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-heart toggle_heart"></i> <!-- f004 -->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-dog toggle_dog"></i> <!-- f6d3 -->
+                    </div>
+                    <div >
+                        <input type="checkbox" name ="switch" id="switch">
+                        <label for="switch" id="label_switch"><span class="bla">bla-bla</span></label>
+                    </div>
+                    <div >
+                        <input type="checkbox" name ="toggle_money" id="toggle_money"> 
+                        <label for="toggle_money" id="label_money"><span class="economique">Économique</span></label>
+                    </div>
                 </div>
-                <br>
-                <i class="fa-solid fa-money-bill-wave"></i>
-                <i class="fa-solid fa-child"></i>
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-dog"></i>
-            </div>
 
-            <!-- herbegements | les plus populaires | activités --> 
+            <br>
+            <!-- herbegements | les plus populaires | activités -->
 
             <i class="fas fa-chart-line"></i>
             <i class="fa-regular fa-star"></i>

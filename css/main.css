@@ -22,11 +22,11 @@
     font-weight: bold;
 }
 
-.recherche_filtre {
+.recherche {
     font-size: 18px;
     font-weight: bold;
-    padding: 5px;
-    margin: 0px 0px 0px 40px;
+    padding: 15px;
+    /*margin: 0px 0px 0px 10px;*/
 }
 
 .texte {
@@ -35,7 +35,9 @@
     /*normal donc 16px */
 }
 
+
 /* header */
+
 
 header {
     display: flex;
@@ -54,7 +56,7 @@ header div a {
 }
 
 header nav ul {
-    display: inline-block;
+    display: inline-flex;
     /*margin: 0px;*/
     padding: 0px; /* pour rapprocher les 2 ancres*/
 }
@@ -67,7 +69,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    text-decoration:none;
+    text-decoration: none;
     padding : 60px; /* ? à verifier pas satisfaite ? */
 }
 
@@ -77,15 +79,192 @@ header nav ul li a:hover {
 
 }
 
-/* main */
+
+/**********
+ *  main  *
+ **********/
+
+/*search bar*/
 
 .search_bar {
     padding: 5px;
-    margin: 0px 0px 0px 40px;
+    margin: 10px 0px 0px 40px;
+    display: inline-block;
 }
 
 .fa-location-dot {
     background-color: var(--grey);
-    padding: 18px 20px 18px 18px;
+    border: 1px solid;
+    border-color: var(--grey);
+    padding: 17.8px 20px 17px 18px;
     border-radius: 15px 0px 0px 15px;
+    float: left; /* pour enlever l'espace mystère */
+}
+
+.search_input {
+    border: 1px solid;
+    border-color: var(--grey);
+    float: left; /* pour enlever l'espace mystère */
+}
+
+.search_button {
+    background-color: var(--blue);
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    float: left; /* pour enlever l'espace mystère */
+    cursor: pointer;
+}
+
+.search_button:active { /* pour mettre petite animation sur le bouton de recherche */
+    border: 1px solid var(--grey);
+}
+
+.search_button_span {
+    color: white;
+}
+
+.search_button_i {
+    display: none;
+}
+
+/* filtre */
+
+.filtres {
+    margin: 20px 0px 0px 40px;
+    display: flex;
+}
+
+.filtre {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+/* toggle switch test */
+
+#label_switch { /* bouton total */
+    display: inline-block;
+    border: 2px solid var(--grey);
+    border-radius: 50px;
+    width: 140px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#label_switch:after { /* petit bouton */
+    font: var(--fa-font-solid);
+    color: var(--fa-primary-color, #0065FC);
+    content: "\f005";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /**/
+    width: 47px;
+    height: 47px;
+    background-color: var(--light-blue);
+    position: absolute;
+    border-radius: 50px;
+}
+
+input:checked + #label_switch:after { /* faire bouger le bouton*/
+    left: calc(100%);
+    transform: translateX(-100%);
+}
+
+.bla {
+    color: black;
+    display: flex;
+    position: absolute;
+    padding: 15px 0px 15px 50px;
+}
+
+
+input:checked + label { /* changer la couleur du fond quand checked*/
+    background-color: var(--blue);
+} 
+
+input:checked + label > span {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    position: absolute;
+    padding: 15px 10px;
+}
+
+input[type="checkbox"] { /*cacher l'elem checkbox non utilisé*/
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+/* filtre économique */
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    header {
+        display: block;
+        height: 20%;
+    }
+
+    header div a {
+        /*border: 2px solid black;*/
+        padding: 5% 40%;
+    }
+
+  /* logo a mettre au milieu*/
+
+    header nav ul li a {
+        text-align: center;
+        width: 100%; 
+        padding: 5% 30px;
+    }
+
+    header nav ul li {
+        width: 100%;
+    }
+
+    header nav ul {
+        width: 100%;
+    }
+
+    header nav {
+        display: inline-flex;
+        width: 100%;
+    
+    }
+
+    header nav ul li a:hover {
+        color: var(--blue);
+        border-top-color: white; /* pour cacher l'autre hover penser rajouter bottom gris et doubler :active*/
+        border-bottom: 3px solid var(--blue);
+    }
+
+ 
+
+    .search_button {
+        background-color: var(--blue);
+        border: none;
+        border-radius: 0px 15px 15px 0px;
+        float: left; /* pour enlever l'espace mystère */
+    }
+
+    .search_button_span {
+        display: none;
+    } 
+
+    .search_button_i {
+        display: inherit;
+        color: white;
+    }
 }
