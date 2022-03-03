@@ -440,14 +440,14 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
 }
 
 
-/* Hébergements */
+/* Hébergements */  /* changer margin et padding pour des pourcentages*/
 
 #ancre_hebergements {
     width: 60%;
     margin: 20px 0px 0px 45px;
 }
 
-.hebergements_block {
+.hebergements_bloc {
     background-color: var(--grey);
     /*width: 60%;*/
     /*height: 600px;*/
@@ -460,7 +460,7 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     /**/
 }
 
-.block_titre {
+.bloc_titre {
     font-size: 20px;
     font-weight: bold;
     margin: 18px 18px 20px 5px;
@@ -546,7 +546,7 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
 }
 
 
-/*les plus populaires*/
+/*les plus populaires*/  /* changer margin et padding pour des pourcentages*/
 
 .populaires {
     /**/
@@ -554,7 +554,7 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     width: 30%;
     /*height: 600px;*/
     margin: 20px 0px 0px 45px;
-    padding: 25px 35px;
+    padding: 25px 35px; 
     border-radius: 25px;
     
 }
@@ -625,6 +625,192 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
 
 .cards_populaires_card_avis {
     /**/
+}
+
+
+/*Activités*/
+
+
+#ancre_activites {
+    /**/
+    width: 100%;
+    margin-top: 25px;
+    background-color: white;
+}
+
+.bloc_activites {
+    height: 450px;
+    width: 100%;
+    display: flex;
+    /*justify-content: space-between;*/
+    /**/
+    margin: 25px 0px 25px 50px;
+}
+
+.grand_bloc {
+    /**/
+    width: 20%;
+    margin-right: 45px;
+}
+
+.grande_card {
+
+    /**/
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px var(--strong-grey);
+}
+
+.grande_card_image {
+    /**/
+    width: 100%;
+    height:  390px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+}
+
+.grande_card_image img {
+    /**/
+    
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.activites_card_text {
+    height: 60px;
+    /**/
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 15px;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.double_bloc {
+    /**/
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 45px;
+}
+
+.petite_card_1 { /*une seule class needed ???*/
+    /**/
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px var(--strong-grey);
+}
+
+.petite_card_1_image {
+    /**/
+    width: 100%;
+    height: 185px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+}
+
+.petite_card_1_image img { /*une seule class needed?????*/
+    /**/
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.petite_card_2 {
+    /**/
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px var(--strong-grey);
+}
+
+.petite_card_2_image {
+    /**/
+    width: 100%;
+    height: 105px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+}
+
+.petite_card_2_image img {
+    /**/
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.petite_card_3 {
+    /**/
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px var(--strong-grey);
+}
+
+.petite_card_3_image {
+    /**/
+    width: 100%;
+    height: 135px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+}
+
+.petite_card_3_image img{
+    /**/
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.petite_card_4 {
+    /**/
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px var(--strong-grey);
+}
+
+.petite_card_4_image {
+    /**/
+    width: 100%;
+    height: 155px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+}
+
+.petite_card_4_image img{
+    /**/
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: var(--grey);
+    margin: 25px 0px 0px 0px; /*margin right a adapter*/
+    display: flex;
+    
+    
+}
+
+.footer_categorie {
+    /**/
+    margin: 20px 0px 0px 50px;
+    padding: 20px 200px 50px 0px;
+}
+
+.footer_liste {
+    /**/
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0px;
+}
+
+.footer_list_elem {
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+}
+
+.footer_liste a {
+    /**/
+    margin: 0px;
+    text-decoration: none;
 }
 
 
