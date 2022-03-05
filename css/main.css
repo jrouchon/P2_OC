@@ -18,7 +18,7 @@
 }
 
 .sous_titre {
-    font-size: 16px; /* à vue de nez à verif*/
+    font-size: 16px; /*à verif*/
     font-weight: bold;
 }
 
@@ -26,7 +26,6 @@
     font-size: 18px;
     font-weight: bold;
     padding: 15px;
-    /*margin: 0px 0px 0px 10px;*/
 }
 
 .texte {
@@ -42,7 +41,6 @@
 header {
     display: flex;
     justify-content: space-between;
-    /* background-color: var(--grey); */
     height: 120px;
 }
 
@@ -57,8 +55,7 @@ header div a {
 
 header nav ul {
     display: inline-flex;
-    /*margin: 0px;*/
-    padding: 0px; /* pour rapprocher les 2 ancres*/
+    padding: 0px; /* pour rapprocher les 2 ancres */
 }
 
 header nav ul li {
@@ -107,6 +104,12 @@ header nav ul li a:hover {
     float: left; /* pour enlever l'espace mystère */
 }
 
+.search_input:focus { /* pour enlever la bordure bleue d'activation et remplacer par une bordure plus foncée pour l'accessibilitée */
+    outline: none;
+    border: 1px solid;
+    border-color: var(--strong-grey);
+}
+
 .search_button {
     background-color: var(--blue);
     border: none;
@@ -140,7 +143,6 @@ header nav ul li a:hover {
     padding: 13px;
     font-size: 18px;
     font-weight: bold;
-    /*border: 2px solid black;*/
 }
 
 .marg_filtre {
@@ -148,55 +150,7 @@ header nav ul li a:hover {
 }
 
 
-/* toggle switch test */
-/*<div >*/
-/*  <input type="checkbox" name="switch" id="switch" >*/
-/*  <label for="switch" id="label_switch" > <span class="bla" > bla-bla</span > </label >*/
-/*</div >*/
-
-/*debut bouton test*/
-#label_switch { /* bouton total */
-    display: inline-block;
-    border: 2px solid var(--grey);
-    border-radius: 50px;
-    width: 140px; /* à adapter selon la taille totale */
-    height: 50px;
-    position: relative;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-#label_switch:after { /* petit bouton */
-    /* icone */
-    font: var(--fa-font-solid);
-    color: var(--fa-primary-color, #0065FC);
-    content: "\f005";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* général */
-    width: 47px;
-    height: 47px;
-    background-color: var(--light-blue);
-    position: absolute;
-    border-radius: 50px;
-}
-
-input:checked + #label_switch:after { /* faire bouger le bouton*/
-    left: calc(100%);
-    transform: translateX(-100%);
-}
-
-.bla { /* avant check*/
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
-    display: flex;
-    position: absolute;
-    padding: 15px 0px 15px 50px; /* à adapter selon la taille du texte */
-}
-/* fin bouton test */
-
+/* toggle switch */
 
 input:checked + label { /* changer la couleur du fond quand checked*/
     background-color: var(--blue);
@@ -227,10 +181,6 @@ input[type="checkbox"] { /*cacher l'elem checkbox non utilisé*/
     position: relative;
     cursor: pointer;
     transition: 0.5s;
-}
-
-#label_money:hover {
-    box-shadow: 0px 0px 10px var(--blue);
 }
 
 #label_money:after { /* petit bouton */
@@ -276,10 +226,6 @@ input:checked + #label_money:after { /* faire bouger le bouton*/
     transition: 0.5s;
 }
 
-#label_child:hover {
-    box-shadow: 0px 0px 10px var(--blue);
-}
-
 #label_child:after { /* petit bouton */
     /* icone */
     font: var(--fa-font-solid);
@@ -323,10 +269,6 @@ input:checked + #label_child:after { /* faire bouger le bouton*/
     transition: 0.5s;
 }
 
-#label_heart:hover {
-    box-shadow: 0px 0px 10px var(--blue);
-}
-
 #label_heart:after { /* petit bouton */
     /* icone */
     font: var(--fa-font-solid);
@@ -368,10 +310,6 @@ input:checked + #label_heart:after { /* faire bouger le bouton*/
     position: relative;
     cursor: pointer;
     transition: 0.5s;
-}
-
-#label_dog:hover {
-    box-shadow: 0px 0px 10px var(--blue);
 }
 
 #label_dog:after { /* petit bouton */
@@ -436,7 +374,6 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
 
 .desktop_v {
     display: flex;
-    /*justify-content: space-around;*/
 }
 
 
@@ -449,15 +386,11 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
 
 .hebergements_bloc {
     background-color: var(--grey);
-    /*width: 60%;*/
-    /*height: 600px;*/
-    /*margin: 20px 0px 0px 45px;*/
     padding: 25px 35px;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /**/
 }
 
 .bloc_titre {
@@ -472,7 +405,6 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     flex-wrap: wrap;
     align-content: space-between;
     height: 450px;
-    /**/
 }
 
 .card {
@@ -482,16 +414,15 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     height: 210px;
     width: 31%;
     border-radius: 20px;
-    /**/
     box-shadow: 0px 0px 15px var(--strong-grey);
 }
 
-.card:hover {
-    /**/
+.hover:hover {
     box-shadow: 0px 0px 15px var(--blue);
+    cursor: pointer;
 }
 
-.card_lien {
+.lien {
     text-decoration: none;
 }
 
@@ -500,44 +431,33 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     width: 100%;
     overflow: hidden;
     border-radius: 18px 18px 0 0;
-    /**/
 }
 
-.card_image img {
+.img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
 .card_lieu {
-    /**/
     margin: 8px 0px 0px 10px;
 }
 
-.card_prix {
-    /**/
+.card_prix_avis {
     margin: 5px 10px;
 }
 
 .card_texte {
-    /**/
     font-size: 14px;
-}
-
-.card_avis {
-    /**/
-    margin: 5px 10px;
 }
 
 .star_blue {
     color: var(--blue);
     font-size: 14px;
-    /**/
 }
 
 .star_grey {
-    color: var(--grey);
-    /**/
+    color: var(--strong-grey);
 }
 
 .afficher_plus {
@@ -583,10 +503,6 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     /**/
 }
 
-.cards_populaires_card:hover {
-    box-shadow: 0px 0px 15px var(--blue);
-}
-
 .cards_populaires_card_lien {
     text-decoration: none;
     display: flex;
@@ -598,15 +514,10 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     border-radius: 20px 0 0 20px;
     margin: 3px;
     overflow: hidden;
-    /*object-fit: cover;*/
-    /**/
 }
 
 .cardes_populaires_card_image img {
     margin: 2px;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
 }
 
 .cards_populaires_card_texte {
@@ -621,10 +532,6 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
 .cards_populaires_card_lieu {
     /**/
     margin: 8px 50px 0px 0px;
-}
-
-.cards_populaires_card_avis {
-    /**/
 }
 
 
@@ -642,9 +549,12 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     height: 450px;
     width: 100%;
     display: flex;
-    /*justify-content: space-between;*/
-    /**/
     margin: 25px 0px 25px 50px;
+}
+
+.activity-hover:hover {
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px var(--blue);
 }
 
 .grand_bloc {
@@ -653,9 +563,7 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     margin-right: 45px;
 }
 
-.grande_card {
-
-    /**/
+.activity-card {
     border-radius: 20px;
     box-shadow: 0px 5px 10px var(--strong-grey);
 }
@@ -668,13 +576,6 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     overflow: hidden;
 }
 
-.grande_card_image img {
-    /**/
-    
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
 
 .activites_card_text {
     height: 60px;
@@ -695,31 +596,12 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     margin-right: 45px;
 }
 
-.petite_card_1 { /*une seule class needed ???*/
-    /**/
-    border-radius: 20px;
-    box-shadow: 0px 5px 10px var(--strong-grey);
-}
-
 .petite_card_1_image {
     /**/
     width: 100%;
     height: 185px;
     border-radius: 20px 20px 0px 0px;
     overflow: hidden;
-}
-
-.petite_card_1_image img { /*une seule class needed?????*/
-    /**/
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.petite_card_2 {
-    /**/
-    border-radius: 20px;
-    box-shadow: 0px 5px 10px var(--strong-grey);
 }
 
 .petite_card_2_image {
@@ -730,38 +612,12 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     overflow: hidden;
 }
 
-.petite_card_2_image img {
-    /**/
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.petite_card_3 {
-    /**/
-    border-radius: 20px;
-    box-shadow: 0px 5px 10px var(--strong-grey);
-}
-
 .petite_card_3_image {
     /**/
     width: 100%;
     height: 135px;
     border-radius: 20px 20px 0px 0px;
     overflow: hidden;
-}
-
-.petite_card_3_image img{
-    /**/
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.petite_card_4 {
-    /**/
-    border-radius: 20px;
-    box-shadow: 0px 5px 10px var(--strong-grey);
 }
 
 .petite_card_4_image {
@@ -772,29 +628,20 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     overflow: hidden;
 }
 
-.petite_card_4_image img{
-    /**/
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
+
 
 footer {
     background-color: var(--grey);
     margin: 25px 0px 0px 0px; /*margin right a adapter*/
     display: flex;
-    
-    
 }
 
 .footer_categorie {
-    /**/
     margin: 20px 0px 0px 50px;
     padding: 20px 200px 50px 0px;
 }
 
 .footer_liste {
-    /**/
     margin: 10px 0px 0px 0px;
     display: flex;
     flex-direction: column;
@@ -807,11 +654,7 @@ footer {
     padding: 0px;
 }
 
-.footer_liste a {
-    /**/
-    margin: 0px;
-    text-decoration: none;
-}
+
 
 
 
