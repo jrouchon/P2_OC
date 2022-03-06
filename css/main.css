@@ -146,7 +146,7 @@ header nav ul li a:hover {
 }
 
 .marg-filtre {
-    margin: 0px 10px 0px 5px;
+    margin: 0px 10px 5px 5px;
 }
 
 
@@ -632,7 +632,7 @@ input:checked + #label-dog:after { /* faire bouger le bouton*/
 
 footer {
     background-color: var(--grey);
-    margin: 25px 0px 0px 0px; /*margin right a adapter*/
+    margin: 50px 0px 0px 0px; 
     display: flex;
 }
 
@@ -658,7 +658,7 @@ footer {
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 992px) {
     header {
         display: block;
         height: 20%;
@@ -675,6 +675,7 @@ footer {
         text-align: center;
         width: 100%; 
         padding: 5% 30px;
+        border-bottom: 3px solid var(--strong-grey);
     }
 
     header nav ul li {
@@ -697,12 +698,15 @@ footer {
         border-bottom: 3px solid var(--blue);
     }
 
- 
+    /* bouton chercher */
 
     .search-button {
         background-color: var(--blue);
         border: none;
         border-radius: 15px 15px 15px 15px; /* a changer 4 coin arrondi sur version mobile*/
+        margin-left: -11px;
+        height: 52px;
+        width: 52px;
         float: left; /* pour enlever l'espace mystère */
     }
 
@@ -713,5 +717,65 @@ footer {
     .search-button-i {
         display: inherit;
         color: white;
+    }
+
+    /* filtre */
+
+
+    /* hebergements */
+
+    #ancre-hebergements {
+        margin: 20px 0px 0px 25px;
+    }
+
+    /* Card */
+    
+    .hebergements-bloc {
+        padding: 15px 10px;
+    }
+
+    .bloc-titre {
+        font-size: 18px;
+    }
+
+    .sous-titre {
+        font-size: 14px 
+    }
+
+    .card-texte {
+        font-size: 12px;
+    }
+
+    .star-blue {
+        font-size: 12px;
+    }
+
+    .star-grey {
+        font-size: 12px;
+    }
+
+    .populaires {
+        margin: 20px 0px 0px 25px;
+        padding: 15px 10px;
+    }
+
+    .cards-populaires-card-texte {
+        padding: 10px 0px 10px 0px;
+    }
+
+    .cards-populaires-card-lieu {
+        margin: 5px 10px 0px 0px;
+    }
+
+    /* activité */
+
+    .bloc-activites {
+        margin: 25px 0px 25px 25px;
+    }
+
+    /* footer */
+
+    .footer-categorie {
+        padding: 20px 80px 50px 0px;
     }
 }
