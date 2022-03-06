@@ -17,7 +17,7 @@
     
 }
 
-.sous_titre {
+.sous-titre {
     font-size: 16px; /*à verif*/
     font-weight: bold;
 }
@@ -83,7 +83,7 @@ header nav ul li a:hover {
 
 /*search bar*/
 
-.search_bar {
+.search-bar {
     padding: 5px;
     margin: 10px 0px 0px 40px;
     display: inline-block;
@@ -98,19 +98,19 @@ header nav ul li a:hover {
     float: left; /* pour enlever l'espace mystère */
 }
 
-.search_input {
+.search-input {
     border: 1px solid;
     border-color: var(--grey);
     float: left; /* pour enlever l'espace mystère */
 }
 
-.search_input:focus { /* pour enlever la bordure bleue d'activation et remplacer par une bordure plus foncée pour l'accessibilitée */
+.search-input:focus { /* pour enlever la bordure bleue d'activation et remplacer par une bordure plus foncée pour l'accessibilitée */
     outline: none;
     border: 1px solid;
     border-color: var(--strong-grey);
 }
 
-.search_button {
+.search-button {
     background-color: var(--blue);
     border: none;
     border-radius: 0px 15px 15px 0px;
@@ -118,15 +118,15 @@ header nav ul li a:hover {
     cursor: pointer;
 }
 
-.search_button:active { /* pour mettre petite animation sur le bouton de recherche */
+.search-button:active { /* pour mettre petite animation sur le bouton de recherche */
     border: 1px solid var(--grey);
 }
 
-.search_button_span {
+.search-button-span {
     color: white;
 }
 
-.search_button_i {
+.search-button-i {
     display: none;
 }
 
@@ -145,7 +145,7 @@ header nav ul li a:hover {
     font-weight: bold;
 }
 
-.marg_filtre {
+.marg-filtre {
     margin: 0px 10px 0px 5px;
 }
 
@@ -172,7 +172,7 @@ input[type="checkbox"] { /*cacher l'elem checkbox non utilisé*/
 
 /* filtre économique */
 
-#label_money { /* bouton total */
+#label-money { /* bouton total */
     display: inline-block;
     border: 2px solid var(--strong-grey);
     border-radius: 50px;
@@ -183,7 +183,7 @@ input[type="checkbox"] { /*cacher l'elem checkbox non utilisé*/
     transition: 0.5s;
 }
 
-#label_money:after { /* petit bouton */
+#label-money:after { /* petit bouton */
     /* icone */
     font: var(--fa-font-solid);
     color: var(--fa-primary-color, #0065FC);
@@ -199,7 +199,7 @@ input[type="checkbox"] { /*cacher l'elem checkbox non utilisé*/
     border-radius: 50px;
 }
 
-input:checked + #label_money:after { /* faire bouger le bouton*/
+input:checked + #label-money:after { /* faire bouger le bouton*/
     left: calc(100%);
     transform: translateX(-100%);
 }
@@ -215,7 +215,7 @@ input:checked + #label_money:after { /* faire bouger le bouton*/
 
 /* filtre Familial */
 
-#label_child { /* bouton total */
+#label-child { /* bouton total */
     display: inline-block;
     border: 2px solid var(--strong-grey);
     border-radius: 50px;
@@ -226,7 +226,7 @@ input:checked + #label_money:after { /* faire bouger le bouton*/
     transition: 0.5s;
 }
 
-#label_child:after { /* petit bouton */
+#label-child:after { /* petit bouton */
     /* icone */
     font: var(--fa-font-solid);
     color: var(--fa-primary-color, #0065FC);
@@ -242,7 +242,7 @@ input:checked + #label_money:after { /* faire bouger le bouton*/
     border-radius: 50px;
 }
 
-input:checked + #label_child:after { /* faire bouger le bouton*/
+input:checked + #label-child:after { /* faire bouger le bouton*/
     left: calc(100%);
     transform: translateX(-100%);
 }
@@ -258,7 +258,7 @@ input:checked + #label_child:after { /* faire bouger le bouton*/
 
 /* filtre romantique */
 
-#label_heart { /* bouton total */
+#label-heart { /* bouton total */
     display: inline-block;
     border: 2px solid var(--strong-grey);
     border-radius: 50px;
@@ -269,7 +269,7 @@ input:checked + #label_child:after { /* faire bouger le bouton*/
     transition: 0.5s;
 }
 
-#label_heart:after { /* petit bouton */
+#label-heart:after { /* petit bouton */
     /* icone */
     font: var(--fa-font-solid);
     color: var(--fa-primary-color, #0065FC);
@@ -285,7 +285,7 @@ input:checked + #label_child:after { /* faire bouger le bouton*/
     border-radius: 50px;
 }
 
-input:checked + #label_heart:after { /* faire bouger le bouton*/
+input:checked + #label-heart:after { /* faire bouger le bouton*/
     left: calc(100%);
     transform: translateX(-100%);
 }
@@ -301,7 +301,7 @@ input:checked + #label_heart:after { /* faire bouger le bouton*/
 
 /* filtre Animaux autorisés */
 
-#label_dog { /* bouton total */
+#label-dog { /* bouton total */
     display: inline-block;
     border: 2px solid var(--strong-grey);
     border-radius: 50px;
@@ -312,7 +312,7 @@ input:checked + #label_heart:after { /* faire bouger le bouton*/
     transition: 0.5s;
 }
 
-#label_dog:after { /* petit bouton */
+#label-dog:after { /* petit bouton */
     /* icone */
     font: var(--fa-font-solid);
     color: var(--fa-primary-color, #0065FC);
@@ -328,7 +328,7 @@ input:checked + #label_heart:after { /* faire bouger le bouton*/
     border-radius: 50px;
 }
 
-input:checked + #label_dog:after { /* faire bouger le bouton*/
+input:checked + #label-dog:after { /* faire bouger le bouton*/
     left: calc(100%);
     transform: translateX(-100%);
 }
@@ -350,7 +350,7 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     margin: 30px 0px 0px 48px;
 }
 
-.info_texte {
+.info-texte {
     padding: 5px;
     margin: 0px 0px 0px 5px;
 }
@@ -372,19 +372,19 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
 /* mise en page ordi */
 
 
-.desktop_v {
+.desktop-v {
     display: flex;
 }
 
 
 /* Hébergements */  /* changer margin et padding pour des pourcentages*/
 
-#ancre_hebergements {
+#ancre-hebergements {
     width: 60%;
     margin: 20px 0px 0px 45px;
 }
 
-.hebergements_bloc {
+.hebergements-bloc {
     background-color: var(--grey);
     padding: 25px 35px;
     border-radius: 25px;
@@ -393,13 +393,13 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     justify-content: flex-start;
 }
 
-.bloc_titre {
+.bloc-titre {
     font-size: 20px;
     font-weight: bold;
     margin: 18px 18px 20px 5px;
 }
 
-.cards_hebergements {
+.cards-hebergements {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -426,7 +426,7 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     text-decoration: none;
 }
 
-.card_image {
+.card-image {
     height: 120px;
     width: 100%;
     overflow: hidden;
@@ -439,28 +439,28 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     object-fit: cover;
 }
 
-.card_lieu {
+.card-lieu {
     margin: 8px 0px 0px 10px;
 }
 
-.card_prix_avis {
+.card-prix-avis {
     margin: 5px 10px;
 }
 
-.card_texte {
+.card-texte {
     font-size: 14px;
 }
 
-.star_blue {
+.star-blue {
     color: var(--blue);
     font-size: 14px;
 }
 
-.star_grey {
+.star-grey {
     color: var(--strong-grey);
 }
 
-.afficher_plus {
+.afficher-plus {
     text-decoration: none;
     margin: 40px 0px 20px 5px;
 }
@@ -479,12 +479,12 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     
 }
 
-.populaires_titre {
+.populaires-titre {
     display: flex;
     justify-content: space-between;
 }
 
-.cards_populaires {
+.cards-populaires {
     height: 500px;
     /*padding-top: 30px;*/
     display: flex;
@@ -494,7 +494,7 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     /**/
 }
 
-.cards_populaires_card {
+.cards-populaires-card {
     background-color: white;
     height: 30%;
     width: 100%;
@@ -503,12 +503,12 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     /**/
 }
 
-.cards_populaires_card_lien {
+.cards-populaires-card-lien {
     text-decoration: none;
     display: flex;
 }
 
-.cardes_populaires_card_image {
+.cardes-populaires-card-image {
     width: 40%;
     height: 143px;
     border-radius: 20px 0 0 20px;
@@ -516,11 +516,11 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     overflow: hidden;
 }
 
-.cardes_populaires_card_image img {
+.cardes-populaires-card-image img {
     margin: 2px;
 }
 
-.cards_populaires_card_texte {
+.cards-populaires-card-texte {
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -529,7 +529,7 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     /**/
 }
 
-.cards_populaires_card_lieu {
+.cards-populaires-card-lieu {
     /**/
     margin: 8px 50px 0px 0px;
 }
@@ -538,14 +538,14 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
 /*Activités*/
 
 
-#ancre_activites {
+#ancre-activites {
     /**/
     width: 100%;
     margin-top: 25px;
     background-color: white;
 }
 
-.bloc_activites {
+.bloc-activites {
     height: 450px;
     width: 100%;
     display: flex;
@@ -557,7 +557,7 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     box-shadow: 0px 0px 15px var(--blue);
 }
 
-.grand_bloc {
+.grand-bloc {
     /**/
     width: 20%;
     margin-right: 45px;
@@ -568,7 +568,7 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     box-shadow: 0px 5px 10px var(--strong-grey);
 }
 
-.grande_card_image {
+.grande-card-image {
     /**/
     width: 100%;
     height:  390px;
@@ -577,7 +577,7 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
 }
 
 
-.activites_card_text {
+.activites-card-text {
     height: 60px;
     /**/
     display: flex;
@@ -587,7 +587,7 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     border-radius: 0px 0px 20px 20px;
 }
 
-.double_bloc {
+.double-bloc {
     /**/
     width: 20%;
     display: flex;
@@ -596,7 +596,7 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     margin-right: 45px;
 }
 
-.petite_card_1_image {
+.petite-card-1-image {
     /**/
     width: 100%;
     height: 185px;
@@ -604,7 +604,7 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     overflow: hidden;
 }
 
-.petite_card_2_image {
+.petite-card-2-image {
     /**/
     width: 100%;
     height: 105px;
@@ -612,7 +612,7 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     overflow: hidden;
 }
 
-.petite_card_3_image {
+.petite-card-3-image {
     /**/
     width: 100%;
     height: 135px;
@@ -620,7 +620,7 @@ input:checked + #label_dog:after { /* faire bouger le bouton*/
     overflow: hidden;
 }
 
-.petite_card_4_image {
+.petite-card-4-image {
     /**/
     width: 100%;
     height: 155px;
@@ -636,12 +636,12 @@ footer {
     display: flex;
 }
 
-.footer_categorie {
+.footer-categorie {
     margin: 20px 0px 0px 50px;
     padding: 20px 200px 50px 0px;
 }
 
-.footer_liste {
+.footer-liste {
     margin: 10px 0px 0px 0px;
     display: flex;
     flex-direction: column;
@@ -649,7 +649,7 @@ footer {
     padding: 0px;
 }
 
-.footer_list_elem {
+.footer-list-elem {
     margin: 10px 0px 0px 0px;
     padding: 0px;
 }
@@ -699,18 +699,18 @@ footer {
 
  
 
-    .search_button {
+    .search-button {
         background-color: var(--blue);
         border: none;
-        border-radius: 0px 15px 15px 0px; /* a changer 4 coin arrondi sur version mobile*/
+        border-radius: 15px 15px 15px 15px; /* a changer 4 coin arrondi sur version mobile*/
         float: left; /* pour enlever l'espace mystère */
     }
 
-    .search_button_span {
+    .search-button-span {
         display: none;
     } 
 
-    .search_button_i {
+    .search-button-i {
         display: inherit;
         color: white;
     }
