@@ -756,6 +756,15 @@ footer {
         font-size: 12px;
     }
 
+    .card-lieu {
+        margin: 6px 0px 0px 5px;
+    }
+
+    .card-prix-avis {
+        margin: 0px 0px 0px 5px;
+        font-size: 12px;
+    }
+
     .star-blue {
         font-size: 12px;
     }
@@ -791,6 +800,40 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    .titre {
+        margin: 10px 10px 0px 40px;
+    }
+
+    .sous-titre {
+        font-size: 16px;
+    }
+
+    .card-texte {
+        font-size: 14px;
+    }
+
+    .card-lieu {
+        margin: 8px 0px 0px 10px;
+    }
+
+    .card-prix-avis {
+        margin: 5px 0px 0px 10px;
+        font-size: 16px;
+    }
+
+    .search-bar {
+        margin: 10px 0px 0px 20px;
+    }
+
+    .filtres {
+        margin: 20px 0px 0px 0px;
+    }
+
+    .filtre {
+        margin: 0px 150px 0px 0px;
+    }
+
     .media-view {
         display: flex;
         flex-direction: column-reverse;
