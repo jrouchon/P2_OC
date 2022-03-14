@@ -5,37 +5,35 @@
     color: black;
     box-sizing: border-box;
 }
-.bleu {
-    color: var(--blue);
-}
 
-.titre {
+.txt-title {
     font-size: 20px;
     font-weight: bold;
     padding: 5px;
     margin: 0px 0px 0px 40px; /* haut droite bas gauche*/
-    
 }
 
-.sous-titre {
+.small-title {
     font-size: 16px; /*à verif*/
     font-weight: bold;
 }
 
-.recherche {
+.city-search {
     font-size: 18px;
     font-weight: bold;
     padding: 15px;
 }
 
-.texte {
+.text {
     padding: 5px;
     margin: 0px 0px 0px 40px; 
     /*normal donc 16px */
 }
 
 
-/* header */
+/************
+ *  header  *
+ ***********/
 
 
 header {
@@ -132,20 +130,20 @@ header nav ul li a:hover {
 
 /* filtre */
 
-.filtres {
+.filters {
     margin: 20px 0px 0px 40px;
     display: flex;
     flex-wrap: wrap;
     padding-right: 15px;
 }
 
-.filtre {
+.filter {
     padding: 13px;
     font-size: 18px;
     font-weight: bold;
 }
 
-.marg-filtre {
+.marg-filter {
     margin: 0px 10px 5px 5px;
 }
 
@@ -350,7 +348,7 @@ input:checked + #label-dog:after { /* faire bouger le bouton*/
     margin: 30px 0px 0px 48px;
 }
 
-.info-texte {
+.info-text {
     padding: 5px;
     margin: 0px 0px 0px 5px;
 }
@@ -377,7 +375,7 @@ input:checked + #label-dog:after { /* faire bouger le bouton*/
 }
 
 
-/* Hébergements */  /* changer margin et padding pour des pourcentages*/
+/* Hébergements */ 
 
 #ancre-hebergements {
     width: 60%;
@@ -393,7 +391,7 @@ input:checked + #label-dog:after { /* faire bouger le bouton*/
     justify-content: flex-start;
 }
 
-.bloc-titre {
+.bloc-title {
     font-size: 20px;
     font-weight: bold;
     margin: 18px 18px 20px 5px;
@@ -447,7 +445,7 @@ input:checked + #label-dog:after { /* faire bouger le bouton*/
     margin: 5px 10px;
 }
 
-.card-texte {
+.card-text {
     font-size: 14px;
 }
 
@@ -466,32 +464,28 @@ input:checked + #label-dog:after { /* faire bouger le bouton*/
 }
 
 
-/*les plus populaires*/  /* changer margin et padding pour des pourcentages*/
+/*les plus populaires*/  
 
 .populaires {
-    /**/
     background-color: var(--grey);
     width: 30%;
-    /*height: 600px;*/
     margin: 20px 0px 0px 45px;
     padding: 25px 35px; 
     border-radius: 25px;
     
 }
 
-.populaires-titre {
+.populaires-title {
     display: flex;
     justify-content: space-between;
 }
 
 .cards-populaires {
     height: 500px;
-    /*padding-top: 30px;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 5px 10px 0px 5px;
-    /**/
 }
 
 .cards-populaires-card {
@@ -500,7 +494,6 @@ input:checked + #label-dog:after { /* faire bouger le bouton*/
     width: 100%;
     border-radius: 20px;
     box-shadow: 0px 0px 15px var(--strong-grey);
-    /**/
 }
 
 .cards-populaires-card-lien {
@@ -526,11 +519,9 @@ input:checked + #label-dog:after { /* faire bouger le bouton*/
     flex-direction: column;
     justify-content: space-between;
     padding: 10px 5px 10px 20px;
-    /**/
 }
 
 .cards-populaires-card-lieu {
-    /**/
     margin: 8px 50px 0px 0px;
 }
 
@@ -539,7 +530,6 @@ input:checked + #label-dog:after { /* faire bouger le bouton*/
 
 
 #ancre-activites {
-    /**/
     width: 100%;
     margin-top: 25px;
     background-color: white;
@@ -558,7 +548,6 @@ input:checked + #label-dog:after { /* faire bouger le bouton*/
 }
 
 .grand-bloc {
-    /**/
     width: 20%;
     margin-right: 45px;
 }
@@ -569,7 +558,6 @@ input:checked + #label-dog:after { /* faire bouger le bouton*/
 }
 
 .grande-card-image {
-    /**/
     width: 100%;
     height:  390px;
     border-radius: 20px 20px 0px 0px;
@@ -579,7 +567,6 @@ input:checked + #label-dog:after { /* faire bouger le bouton*/
 
 .activites-card-text {
     height: 60px;
-    /**/
     display: flex;
     align-items: center;
     padding: 0px 0px 0px 15px;
@@ -588,7 +575,6 @@ input:checked + #label-dog:after { /* faire bouger le bouton*/
 }
 
 .double-bloc {
-    /**/
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -597,7 +583,6 @@ input:checked + #label-dog:after { /* faire bouger le bouton*/
 }
 
 .petite-card-1-image {
-    /**/
     width: 100%;
     height: 185px;
     border-radius: 20px 20px 0px 0px;
@@ -605,7 +590,6 @@ input:checked + #label-dog:after { /* faire bouger le bouton*/
 }
 
 .petite-card-2-image {
-    /**/
     width: 100%;
     height: 105px;
     border-radius: 20px 20px 0px 0px;
@@ -613,7 +597,6 @@ input:checked + #label-dog:after { /* faire bouger le bouton*/
 }
 
 .petite-card-3-image {
-    /**/
     width: 100%;
     height: 135px;
     border-radius: 20px 20px 0px 0px;
@@ -621,7 +604,6 @@ input:checked + #label-dog:after { /* faire bouger le bouton*/
 }
 
 .petite-card-4-image {
-    /**/
     width: 100%;
     height: 155px;
     border-radius: 20px 20px 0px 0px;
@@ -653,299 +635,3 @@ footer {
     margin: 10px 0px 0px 0px;
     padding: 0px;
 }
-
-
-
-
-
-@media (max-width: 992px) {
-    header {
-        display: block;
-        height: 20%;
-    }
-
-    header div a {
-        /*border: 2px solid black;*/
-        padding: 5% 40%;
-    }
-
-  /* logo a mettre au milieu*/
-
-    header nav ul li a {
-        text-align: center;
-        width: 100%; 
-        padding: 5% 30px;
-        border-bottom: 3px solid var(--strong-grey);
-    }
-
-    header nav ul li {
-        width: 100%;
-    }
-
-    header nav ul {
-        width: 100%;
-    }
-
-    header nav {
-        display: inline-flex;
-        width: 100%;
-    
-    }
-
-    header nav ul li a:hover {
-        color: var(--blue);
-        border-top-color: white; 
-        border-bottom: 3px solid var(--blue);
-    }
-
-    header nav ul li a:active {
-        color: var(--blue);
-        border-top-color: white;
-        border-bottom: 3px solid var(--blue);
-    }
-
-    .titre {
-        margin: 10px 0px 0px 40px;
-    }
-
-    /* bouton chercher */
-
-    .search-button {
-        background-color: var(--blue);
-        border: none;
-        border-radius: 15px 15px 15px 15px; /* a changer 4 coin arrondi sur version mobile*/
-        margin-left: -11px;
-        height: 52px;
-        width: 52px;
-        float: left; /* pour enlever l'espace mystère */
-    }
-
-    .search-button-span {
-        display: none;
-    } 
-
-    .search-button-i {
-        display: inherit;
-        color: white;
-    }
-
-    /* filtre */
-
-
-    /* hebergements */
-
-    #ancre-hebergements {
-        margin: 20px 0px 0px 25px;
-    }
-
-    /* Card */
-    
-    .hebergements-bloc {
-        padding: 15px 10px;
-    }
-
-    .bloc-titre {
-        font-size: 18px;
-    }
-
-    .sous-titre {
-        font-size: 14px 
-    }
-
-    .card-texte {
-        font-size: 12px;
-    }
-
-    .card-lieu {
-        margin: 6px 0px 0px 5px;
-    }
-
-    .card-prix-avis {
-        margin: 0px 0px 0px 5px;
-        font-size: 12px;
-    }
-
-    .star-blue {
-        font-size: 12px;
-    }
-
-    .star-grey {
-        font-size: 12px;
-    }
-
-    .populaires {
-        margin: 20px 0px 0px 25px;
-        padding: 15px 10px;
-    }
-
-    .cards-populaires-card-texte {
-        padding: 10px 0px 10px 0px;
-    }
-
-    .cards-populaires-card-lieu {
-        margin: 5px 10px 0px 0px;
-    }
-
-    /* activité */
-
-    .bloc-activites {
-        margin: 25px 0px 25px 25px;
-    }
-
-    /* footer */
-
-    .footer-categorie {
-        padding: 20px 80px 50px 0px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .titre {
-        margin: 10px 10px 0px 40px;
-    }
-
-    .sous-titre {
-        font-size: 16px;
-    }
-
-    .card-texte {
-        font-size: 14px;
-    }
-
-    .card-lieu {
-        margin: 8px 0px 0px 10px;
-    }
-
-    .card-prix-avis {
-        margin: 5px 0px 0px 10px;
-        font-size: 16px;
-    }
-
-    .search-bar {
-        margin: 10px 0px 0px 20px;
-    }
-
-    .filtres {
-        margin: 20px 0px 0px 0px;
-    }
-
-    .filtre {
-        margin: 0px 150px 0px 0px;
-    }
-
-    .media-view {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .populaires {
-        width: 100%;
-        border-radius: 0px;
-        margin: 20px 0px 0px 0px;
-    }
-
-    .cards-populaires-card-texte {
-        padding: 10px 5px 10px 5px;
-    }
-
-    .cards-populaires-card-lieu {
-        margin: 5px 5px 0px 5px;
-    }
-
-    .hebergements-bloc {
-        background-color: white;
-
-    }
-
-    #ancre-hebergements {
-        width: 100%;
-        margin: 20px 0px 0px 0px;
-    }
-
-    .cards-hebergements {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        height: unset;
-    }
-
-    .card {
-        margin: 10px 5px 5px 0px;
-        padding: 5px;
-        width: 100%;
-    }
-
-    .bloc-activites {
-        height: unset;
-        width: 100%;
-        display: flex;
-        margin: 20px 0px 5px 0px;
-        flex-direction: column;
-    }
-
-    .grand-bloc {
-        width: 100%;
-        padding: 0px 10px 0px 10px;
-        height: 210px;
-        margin: 10px 0px;
-    }
-
-    .grande-card-image {
-        width: 100%;
-        height: 160px;
-    }
-
-    .activites-card-text {
-        height: 50px;
-
-    }
-
-    .bloc-activites > .activity-hover:hover {
-        border-radius: 20px;
-        box-shadow: none;
-    }
-
-    .grand-bloc > .lien > .activity-card:hover {
-        border-radius: 20px;
-        box-shadow: 0px 0px 15px var(--blue);
-    }
-
-    .double-bloc {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 0px 10px 0px 10px;
-        height: 430px;
-    }
-
-    .activity-card {
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .petite-card-1-image {
-        height: 160px;
-    }
-
-    .petite-card-2-image {
-        height: 160px;
-    }
-
-    .petite-card-3-image {
-        height: 160px;
-    }
-
-    .petite-card-4-image {
-        height: 160px;
-    }
-
-    footer {
-        margin: 20px 0px 0px 0px;
-        flex-direction: column;
-    }
-
-
-
-        /**/
- }
