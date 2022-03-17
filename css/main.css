@@ -65,7 +65,8 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    padding : 60px; /* ? à verifier pas satisfaite ? */
+    padding : 60px; 
+    border-top: 3px solid transparent;
 }
 
 header nav ul li a:hover {

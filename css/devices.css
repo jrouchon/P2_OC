@@ -283,3 +283,39 @@
         flex-direction: column;
     }
  }
+
+/* responsive */
+
+@media (max-width: 1400px) {
+    /* Card */
+
+    .card-lieu {
+        margin: 6px 0px 0px 5px;
+    }
+
+    .card-prix-avis {
+        margin: 0px 0px 0px 5px;
+        font-size: 12px;
+    }
+
+    .star-blue {
+        font-size: 12px;
+    }
+
+    .star-grey {
+        font-size: 12px;
+    }
+
+    .populaires {
+        margin: 20px 0px 0px 25px;
+        padding: 15px 10px;
+    }
+
+    .cards-populaires-card-texte {
+        padding: 10px 0px 10px 0px;
+    }
+
+    .cards-populaires-card-lieu {
+        margin: 5px 10px 0px 0px;
+    }
+}
